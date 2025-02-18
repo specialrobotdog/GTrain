@@ -20,11 +20,11 @@ async function getGTrainStatus() {
     }
 }
 
-// Serve API Route
+// Define API Route
 app.get('/status', async (req, res) => {
     const status = await getGTrainStatus();
     res.json(status);
 });
 
 // Start Server
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
